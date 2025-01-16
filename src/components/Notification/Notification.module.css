@@ -1,0 +1,6 @@
+.notificationText {
+  text-align: center;
+  color: #191970;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 128, 0.3);
+}

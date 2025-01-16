@@ -1,0 +1,13 @@
+.descriptionTitle{
+font-weight: 500;
+font-size: 45px;
+color: #000080;
+text-align: center;
+text-shadow: 2px 2px 4px rgb(0, 0, 128, 0.3);
+
+}
+.descriptionText{
+font-weight: 400;
+font-size: 20px;
+color: #191970;
+}

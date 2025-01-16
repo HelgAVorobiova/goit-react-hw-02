@@ -1,4 +1,4 @@
-// import css from "./Options.module.css";
+import css from "./Options.module.css";
 
 export default function Options({
   btnOption,
@@ -7,15 +7,22 @@ export default function Options({
   onResetFeedback,
 }) {
   return (
-    <div>
+    <div className={css.optionContainer}>
       {btnOption.map(option => (
-        <button key={option} onClick={() => onClickFeetback(option)}>
+        <button
+          className={css.optionBtn}
+          key={option}
+          onClick={() => onClickFeetback(option)}
+        >
           {option}
         </button>
       ))}
 
       {totalFeedback > 0 && (
-        <button onClick={onResetFeedback} style={{ marginLeft: '10px' }}>
+        <button
+          className={css.optionBtnReset}
+          onClick={onResetFeedback}
+        >
           Reset
         </button>
       )}
